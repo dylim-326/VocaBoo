@@ -1,0 +1,30 @@
+.vocab-form{
+    border: 1px solid rgb(216, 233, 216);
+    border-radius: 10px;
+    background-color: rgb(216, 233, 216);
+    margin: 0 auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#title-input{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 30px;
+}
+
+#desc-input{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 30px;
+}
+
+#add-btn{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(161, 189, 168);
+    color: white;
+}

@@ -1,0 +1,18 @@
+.TodayVoca{
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    z-index: 99;
+    display: absolute;
+    top: 170px;
+    left: 100px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+img{
+    height: 80%;
+}

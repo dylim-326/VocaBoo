@@ -1,0 +1,160 @@
+main {
+padding-top: 60px;
+text-align: center;
+}
+
+
+.searchbar {
+    padding-top: 40px;
+    width: 48%;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.searchbox {
+    flex: 1;
+    border: 1px solid rgb(34, 109, 49);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.searchbutton {
+    width: 80px;
+    border: 1px solid rgb(34, 109, 49);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(34, 109, 49);
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.searchbutton:hover{
+    background-color: rgb(44, 134, 66);
+}
+
+
+
+
+/* 카드 컨테이너 */
+.container {
+margin-top: 80px;
+margin-left: 450px;
+margin-right: 450px;
+display: flex;
+justify-content: space-around;
+}
+
+/* a 태그 */
+.container a {
+width: 25%;
+height: 350px;
+perspective: 1000px;
+color: inherit;
+text-decoration: none;
+}
+
+/* 카드 공통 스타일 */
+.card {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.8s ease-in-out;
+border-radius: 30px;
+cursor: pointer;
+}
+
+.container a:hover .card {
+transform: rotateY(180deg);
+}
+
+/* 카드 앞면 / 뒷면 */
+.front, .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+border-radius: 30px;
+box-shadow: 8px 8px 10px gray;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/* 앞면 */
+.front {
+background-color: white;
+color: rgb(44, 134, 66);
+z-index: 2;
+}
+
+/* 뒷면 */
+.back {
+background-color: white;
+color: black;
+transform: rotateY(180deg);
+z-index: 1;
+padding: 20px;
+font-size: 18px;
+}
+
+/*  이미지 스타일  */
+.card img {
+width: 80%;
+height: auto;
+margin-bottom: 15px;
+object-fit: contain;   /* 비율 유지 */
+}
+
+#populartext {
+margin-top: 130px;
+color: rgb(34, 109, 49);
+}
+
+.wrap01 {
+height: 300px;
+margin-top: 50px;
+margin-left: 500px;
+margin-right: 500px;
+display: flex;
+justify-content: space-around;
+}
+
+.vocab {
+width: 200px;
+border-radius: 10px;
+overflow: hidden;
+background-color: white;
+}
+
+.vocab-text {
+text-align: center;
+}
+
+.vocaimg {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+#lookaround {
+width: 150px;
+height: 30px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 15px;
+color: rgb(34, 109, 49);
+background-color: white;
+border: 1px solid white;
+border-radius: 10px;
+}
+
+#lookaround:hover {
+font-weight: bold;
+}

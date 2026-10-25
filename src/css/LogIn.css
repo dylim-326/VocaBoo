@@ -1,0 +1,41 @@
+.LogIn{
+    display: flex;
+}
+
+.login-part{
+    /* border: 1px solid red; */
+    padding-top: 15%;
+    width: 50%;
+}
+
+.login-part input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.login-part button{
+    width: 360px;
+    height: 30px;
+    background-color: rgb(138, 184, 138);
+    border: 1px solid rgb(138, 184, 138);
+    color: white;
+    border-radius: 10px;
+}
+
+.login-part button:hover{
+    cursor: pointer;
+    background-color: rgb(88, 131, 88);
+}
+
+.boo{
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+
+.boo img{
+    width: 600px;
+    height: 600px;
+    padding-top: 130px;
+}

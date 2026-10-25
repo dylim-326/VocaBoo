@@ -1,0 +1,39 @@
+.vocab-list {
+    padding-top: 60px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* 넘치는 카드 자동 줄바꿈 */
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.vocab-card {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.card-content{
+    /* border: 1px solid yellow; */
+    height: 90px;
+}
+
+.card-content:hover{
+    cursor: pointer;
+}
+
+#delete{
+    width: 50px;
+    margin: 0 auto;
+    background-color: rgb(245, 222, 222);
+    border: 1px solid rgb(245, 222, 222);
+    border-radius: 10px;
+}

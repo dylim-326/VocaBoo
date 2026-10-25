@@ -1,0 +1,16 @@
+.Sns{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 99;
+    /* display: absolute; */
+    top: 8;
+    right: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#blog, #kakao{
+    width: 100px;
+    cursor: pointer;
+}

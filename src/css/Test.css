@@ -1,0 +1,203 @@
+/* 페이지 전체 감싸는 영역 */
+.test-wrap {
+  /* background-color: rgb(245, 255, 245); */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* wrap 내부 레이아웃 (좌측 오늘의 단어 / 중앙 메인 / 우측 아이콘) */
+.wrap {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 120px;
+  justify-content: space-between;
+}
+
+/* 오늘의 단어 */
+section {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.today {
+  position: sticky;
+  top: 130px;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 8px 8px 10px rgb(197, 197, 197);
+  overflow: hidden;
+  background-color: white;
+}
+
+/* 메인 콘텐츠 */
+.test-box {
+  flex: 1;
+}
+
+.test-title {
+  color: rgb(44, 134, 66);
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* 설정 박스 */
+.write {
+  background-color: white;
+  border: 1px solid rgb(44, 134, 66);
+  border-radius: 30px;
+  width: 80%; height: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#check {
+  float: right;
+  margin-right: 30px;
+  font-size: 15px;
+}
+
+#choose {
+  margin-top: 40px;
+}
+
+#choose label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#choose input {
+  width: 30%;
+  height: 35px;
+  margin: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#choose button {
+  width: 50px;
+  height: 35px;
+  background-color: rgb(44, 134, 66);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#choose button:hover {
+  background-color: #175827;
+}
+
+/* 게임 유형 선택 */
+#test {
+  margin-top: 50px;
+}
+
+#test p {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#btn button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid rgb(44, 134, 66);
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(44, 134, 66);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#btn button:hover {
+  background-color: rgb(44, 134, 66);
+  color: white;
+}
+
+/* Start 버튼 */
+#submit {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    background-color: rgb(44, 134, 66);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#submit:hover {
+  background-color: white;
+  color: rgb(44, 134, 66);
+  border: 1px solid rgb(44, 134, 66);
+}
+
+/* 오른쪽 SNS 아이콘 */
+article {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+article img {
+  width: 80px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+article img:hover {
+  transform: scale(1.1);
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  main {
+    width: 100%;
+    order: 2;
+  }
+
+  article {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    order: 3;
+  }
+}
